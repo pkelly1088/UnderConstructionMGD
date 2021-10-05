@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  width: fit-content;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+p {
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+@media (min-width: 900px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+body {
+  height: 100vh;
+  background: url(./../images/wychmere_harbor_retreat.jpg) no-repeat center center fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #023668;
+  padding: 16px;
+  width: fit-content;
+  margin-top: 50px;
+  text-align: center;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+@media (min-width: 900px) {
+  section {
+    padding: 24px;
+  }
+}
+
+section .logo {
+  height: 75px;
+}
+
+@media (min-width: 900px) {
+  section .logo {
+    height: 100px;
+  }
+}
+
+section .social-links a img {
+  margin: 8px;
+  height: 35px;
+  filter: invert(17%) sepia(23%) saturate(4366%) hue-rotate(190deg) brightness(98%) contrast(104%);
+}
+
+section .social-links a img:hover {
+  opacity: 0.7;
+}
